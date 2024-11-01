@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="512.png">
+    <title>EQ-Эквалайзер</title>
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url(fonts/minecraft.ttf);
+        }
+        body {
+            text-shadow: 0 0 6px black;
+            font-family: 'Minecraft', sans-serif;
+            background-color: rgba(180, 180, 180, 0.699);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+            text-align: center;
+        }
+        
+        h1,h2 {
+            text-shadow: 0 0 5px black;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+        h2{
+            color: #333;
+        }
+        h1{
+            font-size: 50px;
+            margin: 0;
+            margin-top: 20px
+        }
+        
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 10px;
+            display: inline-block;
+        }
+        
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        
+        .reviews {
+            display: none;
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .info{
+            font-size: 20px;
+            max-width: 700px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+        /* Новый стиль для анимации */
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        li {
+            max-width: 1000px;
+            text-align: justify;
+            margin: 10px;
+            line-height: 20px;
+        }
+        
+        img {
+            margin:20px;
+            align-content: center;
+            border-radius: 10px;
+            box-shadow: 0 0 6px rgb(122, 119, 119);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EQ</h1>
+    <p class="info">Расширение для браузера EQ — это мощный инструмент, который позволяет пользователям настраивать звук в браузере с помощью эквалайзера. С помощью EQ вы можете улучшить качество воспроизведения музыки, подкастов и видео, адаптируя звук под свои предпочтения.
+        </p>
+    <h2>Интерфейс приложения:</h2>
+    <img src="EQ.jpg" alt="EQ">
+    <h2>Инструкция по использованию расширения:</h2>
+    <p>
+        <ol>
+            <li><strong>Включение/Выключение:</strong> для того чтобы включить или же выключить эквалайзер нажмите на кнопку в левом вехнем углу меню расширения.</li>
+            <li><strong>Выбор пресета:</strong> вы можете выбрать нужный вам вариант из предложенного списка, который вы можете открыть нажав на вкладку настроек, находящееся возле указывающей надписи "Настройки".</li>
+            <li><strong>Выбор громкости:</strong> вы можете, по желанию, установить увеличение или уменьшение громкости для звука из вашего браузера. Для этого вам нужно выбрать желаемый уровень на ползунке громкости в самой левой части интерфейса, над указывающей надписью "Громкость"</li>
+            <li><strong>Выбор разных частот:</strong> вы можете самостоятельно установить желаемый уровень частот звука, коих вы можете выбрать 10 штук<br>(60 Гц, 170 Гц, 310 Гц, 600 Гц, 1K Гц, 3K Гц, 6K Гц, 12K Гц, 14K Гц, 16K Гц).</li>
+        </ol>
+    </p>
+
+    <h2>Пошаговая инструкция по установке:</h2>
+    <p>
+        <ol>
+            <li>Скачайте файл. Распакуйте его в удобном месте.</li>
+            <li>Откройте Google Chrome.</li>
+            <li>Перейдите на страницу управления расширениями. Для этого введите в адресной строке chrome://extensions/ и нажмите Enter.</li>
+            <li>Включите режим разработчика. В правом верхнем углу страницы есть переключатель "Режим разработчика". Включите его.</li>
+            <li>Нажмите на кнопку "Загрузить распакованное". Выберите папку, в которой находятся файлы вашего расширения.</li>
+            <li>Ваше расширение должно появиться в списке. Если все сделано правильно, вы увидите его в списке установленных расширений.</li>
+        </ol>
+        <h2>Скачать файл - <a class="button" href="EQ.rar" download>Скачать .RAR</a></h2>
+    </p>
+</body>
+
+</html>
